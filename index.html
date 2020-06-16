@@ -16,8 +16,7 @@
         height: 95vh;
         width: 95%;
         margin: 20px auto;
-        border: 2px solid red;
-        box-shadow: 0 0 5px red;
+        
       }
       .fullscreen {
         background-color: #333;
@@ -42,11 +41,11 @@
       }
     </style>
 
-    <div class="examples">
+    <!--<div class="examples">
       <div>
         <a href="example2.html">Several flipbooks on one page</a> <a href="example1.html">Lightbox</a>
       </div>
-    </div>
+    </div>-->
 
     <div class="container" id="container">
 
@@ -94,8 +93,7 @@
         propertiesCallback: function(props) {
           props.cssLayersLoader = function(n, clb) {// n - page number
             clb([{
-              css: '.hd {margin-top: 200px;background-color: red;}',
-              html: '<h1 class="hd">CSS3 Layer - Hello</h1>',
+              
               js: function (jContainer) {
                 console.log(jContainer);
                 return {
